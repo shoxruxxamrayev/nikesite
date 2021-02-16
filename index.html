@@ -4,86 +4,254 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/all.min.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/media.css">
+    <link rel="stylesheet" href="./style/fonts.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./fonts/all.min.css">
+    <title>Porten</title>
 </head>
 
 <body>
-    <header>
-        <nav class="header_nav container">
-            <a href="#!">
-                <img src="images/adidas-logo-png-white 1.png" alt="nike logo white">
-            </a>
-            <ul class="header_list">
-                <li><a href="#!">Кроссовки</a></li>
-                <li><a href="#!">Кеды</a></li>
-                <li><a href="#!">Футболки</a></li>
-                <li><a href="#!">Шорты</a></li>
-                <li><a href="#!">Майки</a></li>
-                <li><a href="#!">Олимпийки</a></li>
-                <li><a href="#!">Толстовки</a></li>
-            </ul>
+    <header class="header">
+        <div class="header__top">
+            <div class="header__icon container">
+                <a href="#" class="header_link">
+                    <i class="fal fa-phone-alt call"></i>
+                    <span class="nomer">8 (812) 123-45-67 | Работаем 7 дней в неделю | 9:00 — 18:00 </span>
+                    <a href="#" class="header_link">
+                        <i class="fal fa-sign-in sign-in"></i>
+                        <span class="sign">Войти / Регистрация</span>
+                    </a>
+                </a>
+
+
+            </div>
+        </div>
+        <nav class="header__nav">
+            <div class="container header__nav-content">
+                <a href="#!" class="logo">
+                    <h2 class="logo__text">PORTEN</h2>
+                </a>
+                <ul class="header__list">
+                    <li><a href="#!" class="header__link header__link-hover">Понравилось</a></li>
+                    <li><a href="#!" class="header__link header__link-hover">личный кабинет</a></li>
+                    <li><a href="#!" class="header__link header__link-hover">настройки</a></li>
+                    <li><a href="#!" class="header__link header__link-hover"><i class="far fa-shopping-cart"></i></a>
+                    </li>
+                    <li><a href="#!" class="header__link header__link-hover"><i class="fas fa-search"></i></a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
         <div class="intro">
-            <h1>nike<i class="fab fa-angellist"></i></h1>
-            <p>Крутые кроссовки от <span>NIKE</span> для вас</p>
-        </div>
-        <div class="catalog container">
-            <div class="left">
-                <img src="images/Nike-React-Infinity-Run-Heel--1920 1.png" alt="Nike React Infinity Run Shoes">
-                <h3>Shoe Review: Nike React Infinity Run</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa</p>
+            <div class="intro__text">
+                <h1 class="intro__title">PORTEN</h1>
+                <div class="bott"></div>
+                <span class="intro__sank">санкт-петербург</span>
             </div>
-            <div class="right">
-                <div class="right_item mb30">
-                    <img src="images/air-max-270-mens-shoe-qVk0Vw 1.png" alt="Nike Air Max 270">
-                    <h3>Nike Air Max 270</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
-                </div>
-                <div class="right_item mb30">
-                    <img src="images/air-max-270-mens-shoe-qVk0Vw 1.png" alt="Nike Air Max 270">
-                    <h3>Nike Air Max 270</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
-                </div>
-                <div class="right_item">
-                    <img src="images/air-max-270-mens-shoe-qVk0Vw 1.png" alt="Nike Air Max 270">
-                    <h3>Nike Air Max 270</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
-                </div>
-                <div class="right_item">
-                    <img src="images/air-max-270-mens-shoe-qVk0Vw 1.png" alt="Nike Air Max 270">
-                    <h3>Nike Air Max 270</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
-                </div>
-            </div>
+            <p class="intro__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus interdum purus, est tortor pulvinar ut
+                in. Fringilla a diam enim sed justo, sed iaculis sagittis. Tortor id eu interdum nec ut iaculis.
+                Penatibus ullamcorper ultricies morbi ipsum sem metus pharetra, mi. Tortor nibh magna feugiat id nunc,
+                dui nisl viverra.
+            </p>
         </div>
     </main>
-    <footer>
-        <form class="footer_form">
-            <input type="text" placeholder="Введите свое имя">
-            <textarea placeholder="Сообщение"></textarea>
-            <button>Отправить</button>
-        </form>
-        
-        <nav class="footer_nav">
-            <ul>
-                <li><a href="#" class="active">Кроссовки</a></li>
-                <li><a href="#">Кеды</a></li>
-                <li><a href="#">Футболки</a></li>
-                <li><a href="#">Шорты</a></li>
-            </ul>
-            <ul>
-                <li><a href="#">Майки</a></li>
-                <li><a href="#">Олимпийки</a></li>
-                <li><a href="#">Толстовки</a></li>
-            </ul>
-        </nav>
+    <div class="season">
+        <h1 class="season__title">СЕЗОН 2020/21</h1>
+    </div>
+    <div class="gallery">
+        <div class="gallery__box">
+            <div class="gallery__clock">
+                <div class="gallery__bg">
+                    <img src="./images/62050 1.png" alt="">
+                </div>
+            </div>
+            <h4 class="name">Louis XVI ATHOS</h4>
+            <span class="price">165 000 руб.</span>
+        </div>
+        <div class="gallery__box">
+            <div class="gallery__clock">
+                <div class="gallery__bg">
+                    <img src="./images/62050 1.png" alt="">
+                </div>
+            </div>
+            <h4 class="name">Louis XVI ATHOS</h4>
+            <span class="price">165 000 руб.</span>
+        </div>
+        <div class="gallery__box">
+            <div class="gallery__clock">
+                <div class="gallery__bg">
+                    <img src="./images/62050 1.png" alt="">
+                </div>
+            </div>
+            <h4 class="name">Louis XVI ATHOS</h4>
+            <span class="price">165 000 руб.</span>
+        </div>
+        <div class="man__photo">
+            <img src="./images/men-2.png" alt="">
+            <h1 class="photo__title">Новая коллекция</h1>
+            <span class="catalog">Каталог</span>
+        </div>
+    </div>
+    <div class="gallery__2">
+        <div class="man-2">
+            <img src="./images/men-3.png" alt="">
+        </div>
+        <div class="gallery__2-text">
+            <h1 class="gl__title">коллекция 2018</h1>
+            <p class="gl__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non rutrum ornare ut mattis
+                habitant dui arcu. Sagittis amet nunc ut neque quis nibh arcu. Vivamus vestibulum nisi et venenatis sed
+                scelerisque magna consectetur. Amet convallis quis gravida facilisis vulputate. Faucibus facilisi
+                habitasse ipsum interdum dictum aliquet. Velit quis ullamcorper pulvinar nulla malesuada integer. Aenean
+                praesent viverra nulla nullam natoque volutpat curabitur auctor. Viverra viverra ullamcorper scelerisque
+                risus dignissim egestas. Id aliquam a aliquam egestas leo orci pharetra sed diam. </p>
+            <p class="gl__colec">посмотреть коллекцию</p>
+        </div>
+    </div>
+    <div class="new-season">
+        <h1 class="new-season__title">новые поступления</h1>
+    </div>
+    <div class="container__season">
+        <div class="gallery__flex">
+            <div class="gallery__box">
+                <div class="gallery__clock">
+                    <div class="gallery__bg">
+                        <img src="./images/62050 1.png" alt="">
+                    </div>
+                </div>
+                <h4 class="name">Louis XVI ATHOS</h4>
+                <span class="price">165 000 руб.</span>
+            </div>
+            <div class="gallery__box">
+                <div class="gallery__clock">
+                    <div class="gallery__bg">
+                        <img src="./images/62050 1.png" alt="">
+                    </div>
+                </div>
+                <h4 class="name">Louis XVI ATHOS</h4>
+                <span class="price">165 000 руб.</span>
+            </div>
+            <div class="gallery__box">
+                <div class="gallery__clock">
+                    <div class="gallery__bg">
+                        <img src="./images/62050 1.png" alt="">
+                    </div>
+                </div>
+                <h4 class="name">Louis XVI ATHOS</h4>
+                <span class="price">165 000 руб.</span>
+            </div>
+            <div class="gallery__box">
+                <div class="gallery__clock">
+                    <div class="gallery__bg">
+                        <img src="./images/62050 1.png" alt="">
+                    </div>
+                </div>
+                <h4 class="name">Louis XVI ATHOS</h4>
+                <span class="price">165 000 руб.</span>
+            </div>
+            <div class="gallery__box">
+                <div class="gallery__clock">
+                    <div class="gallery__bg">
+                        <img src="./images/62050 1.png" alt="">
+                    </div>
+                </div>
+                <h4 class="name">Louis XVI ATHOS</h4>
+                <span class="price">165 000 руб.</span>
+            </div>
+            <div class="gallery__box">
+                <div class="gallery__clock">
+                    <div class="gallery__bg">
+                        <img src="./images/62050 1.png" alt="">
+                    </div>
+                </div>
+                <h4 class="name">Louis XVI ATHOS</h4>
+                <span class="price">165 000 руб.</span>
+            </div>
+            <div class="gallery__box">
+                <div class="gallery__clock">
+                    <div class="gallery__bg">
+                        <img src="./images/62050 1.png" alt="">
+                    </div>
+                </div>
+                <h4 class="name">Louis XVI ATHOS</h4>
+                <span class="price">165 000 руб.</span>
+            </div>
+            <div class="gallery__box">
+                <div class="gallery__clock">
+                    <div class="gallery__bg">
+                        <img src="./images/62050 1.png" alt="">
+                    </div>
+                </div>
+                <h4 class="name">Louis XVI ATHOS</h4>
+                <span class="price">165 000 руб.</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="brand">
+        <div class="container__season">
+            <div class="brand-season">
+                <h1 class="brand-season__title">наши бренды</h1>
+            </div>
+            <div class="brand__flex">
+                <img src="./images/brand.png" alt="coco-fine" class="brand-bg">
+                <img src="./images/brand.png" alt="coco-fine" class="brand-bg">
+                <img src="./images/brand.png" alt="coco-fine" class="brand-bg">
+                <img src="./images/brand.png" alt="coco-fine" class="brand-bg">
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <section class="footer__intro">
+            <img src="./images/footer-bg.png" class="footer__bg">
+            <div class="footer__container">
+                <div class="footer__content">
+                    <h1 class="footer__title">О магазине</h1>
+                    <h1 class="footer__title"> Категории</h1>
+                    <h1 class="footer__title"> РАссылка</h1>
+                </div>
+                <div class="content">
+                    <p class="content__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra
+                        nunc cursus tortor lectus nunc nulla nibh. Egestas amet consectetur vel vitae aliquam dictum
+                        suspendisse. Lobortis eget consequat, tellus et et sed turpis. Pretium quisque vitae, amet,
+                        porttitor odio ultricies massa pharetra leo. Et ipsum urna fames in sit mi ultrices nisi, nunc.
+                    </p>
+                    <div class="categoria">
+                        <a href="#" class="categoria__btn">
+                            <h4 class="btn__text">часы</h4>
+                        </a>
+                        <a href="#" class="categoria__btn">
+                            <h4 class="btn__text">браслеты</h4>
+                        </a>
+                        <a href="#" class="categoria__btn">
+                            <h4 class="btn__text">часы</h4>
+                        </a>
+                        <a href="#" class="categoria__btn">
+                            <h4 class="btn__text">ювелирные&nbsp;изделия</h4>
+                        </a>
+                        <a href="#" class="categoria__btn">
+                            <h4 class="btn__text">запонки</h4>
+                        </a>
+                    </div>
+                    <div class="rasilka">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor
+                            lectus nunc nulla nibh.</p>
+                        <form class="form">
+                            <input type="text" class="inbox__mail" placeholder="Ваши почта">
+                            <input type="submit" class="subscribe__btn" value="ПОДПИСАТЬСЯ">
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="footer__bottom">
+            <div class="footer__btn-container">
+                <h4 class="footer__bt-title">© 2020 Все права защищены</h4>
+                <h4 class="footer__bt-title">Сделано ShoxMediauz</h4>
+            </div>
+        </div>
     </footer>
 </body>
 
